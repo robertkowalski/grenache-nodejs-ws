@@ -17,6 +17,7 @@ describe('RPC integration', () => {
     grape = spawn(path.join(__dirname, 'boot-grape.sh'))
     setTimeout(() => {
       rpc = spawn(path.join(__dirname, 'boot-rpc-server.sh'))
+      done()
     }, 2000)
   })
 
