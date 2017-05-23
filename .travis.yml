@@ -9,4 +9,4 @@ install:
   - npm i -g grenache-grape
 
 before_script:
-  - ./test/rpc-server.sh
+  - ./test/rpc-server.sh &
