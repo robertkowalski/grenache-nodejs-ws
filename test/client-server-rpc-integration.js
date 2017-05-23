@@ -14,11 +14,11 @@ let deps
 
 describe('RPC integration', () => {
   before(function (done) {
-    this.timeout(5000)
+    this.timeout(6000)
     deps = spawn(path.join(__dirname, 'rpc-server.sh'))
     setTimeout(() => {
       done()
-    }, 3000)
+    }, 5000)
   })
 
   after((done) => {
@@ -57,6 +57,6 @@ describe('RPC integration', () => {
         assert.equal(data.length, 5)
         done()
       })
-    }, 2000)
+    }, 5000)
   }).timeout(15000)
 })
